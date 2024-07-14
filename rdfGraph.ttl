@@ -1,0 +1,702 @@
+@prefix ex: <http://example.org/ns#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:Person1 a ex:Person ;
+    ex:name "Alice  " ;
+    ex:age 30 ;
+    ex:cpf "123.456.789-01" ;
+    ex:friends ex:Person2, ex:Person3, ex:Person4 ;
+    ex:mbox "alice@example.com", "alice.work@example.com" .
+
+ex:Person2 a ex:Person ;
+    ex:name "Bob    " ;
+    ex:age 25 ;
+    ex:cpf "234.567.890-12" ;
+    ex:friends ex:Person1, ex:Person3 ;
+    ex:mbox "bob@example.com", "bob.work@example.com" .
+
+ex:Person3 a ex:Person ;
+    ex:name "Charlie" ;
+    ex:age 28 ;
+    ex:cpf "345.678.901-23" ;
+    ex:friends ex:Person1, ex:Person2, ex:Person5 ;
+    ex:mbox "charlie@example.com", "charlie.work@example.com" .
+
+ex:Person4 a ex:Person ;
+    ex:name "Diana  " ;
+    ex:age 22 ;
+    ex:cpf "456.789.012-34" ;
+    ex:friends ex:Person1 ;
+    ex:mbox "diana@example.com", "diana.work@example.com" .
+
+ex:Person5 a ex:Person ;
+    ex:name "Eve    " ;
+    ex:age 35 ;
+    ex:cpf "567.890.123-45" ;
+    ex:friends ex:Person3 ;
+    ex:mbox "eve@example.com", "eve.work@example.com" .
+
+ex:Person6 a ex:Person ;
+    ex:name "Frank  " ;
+    ex:age 40 ;
+    ex:cpf "678.901.234-56" ;
+    ex:friends ex:Person7, ex:Person8, ex:Person9 ;
+    ex:mbox "frank@example.com", "frank.work@example.com" .
+
+ex:Person7 a ex:Person ;
+    ex:name "Grace  " ;
+    ex:age 29 ;
+    ex:cpf "789.012.345-67" ;
+    ex:friends ex:Person6, ex:Person8 ;
+    ex:mbox "grace@example.com", "grace.work@example.com" .
+
+ex:Person8 a ex:Person ;
+    ex:name "Heidi  " ;
+    ex:age 33 ;
+    ex:cpf "890.123.456-78" ;
+    ex:friends ex:Person6, ex:Person7, ex:Person10 ;
+    ex:mbox "heidi@example.com", "heidi.work@example.com" .
+
+ex:Person9 a ex:Person ;
+    ex:name "Ivan   " ;
+    ex:age 31 ;
+    ex:cpf "901.234.567-89" ;
+    ex:friends ex:Person6 ;
+    ex:mbox "ivan@example.com", "ivan.work@example.com" .
+
+ex:Person10 a ex:Person ;
+    ex:name "Judy   " ;
+    ex:age 27 ;
+    ex:cpf "012.345.678-90" ;
+    ex:friends ex:Person8 ;
+    ex:mbox "judy@example.com", "judy.work@example.com" .
+
+ex:Person11 a ex:Person ;
+    ex:name "Karl   " ;
+    ex:age 45 ;
+    ex:cpf "111.222.333-44" ;
+    ex:friends ex:Person12, ex:Person13 ;
+    ex:mbox "karl@example.com", "karl.work@example.com" .
+
+ex:Person12 a ex:Person ;
+    ex:name "Laura  " ;
+    ex:age 38 ;
+    ex:cpf "222.333.444-55" ;
+    ex:friends ex:Person11 ;
+    ex:mbox "laura@example.com", "laura.work@example.com" .
+
+ex:Person13 a ex:Person ;
+    ex:name "Mike   " ;
+    ex:age 42 ;
+    ex:cpf "333.444.555-66" ;
+    ex:friends ex:Person11, ex:Person14 ;
+    ex:mbox "mike@example.com", "mike123@example.com" .
+
+ex:Person14 a ex:Person ;
+    ex:name "Nina   " ;
+    ex:age 26 ;
+    ex:cpf "444.555.666-77" ;
+    ex:friends ex:Person13 ;
+    ex:mbox "nina@example.com", "nina.work@example.com" .
+
+ex:Person15 a ex:Person ;
+    ex:name "Oscar  " ;
+    ex:age 36 ;
+    ex:cpf "555.666.777-88" ;
+    ex:friends ex:Person16, ex:Person17 ;
+    ex:mbox "oscar@example.com", "oscar.work@example.com" .
+
+ex:Person16 a ex:Person ;
+    ex:name "Paul   " ;
+    ex:age 32 ;
+    ex:cpf "666.777.888-99" ;
+    ex:friends ex:Person15 ;
+    ex:mbox "paul@example.com", "paul.work@example.com" .
+
+ex:Person17 a ex:Person ;
+    ex:name "Quincy " ;
+    ex:age 29 ;
+    ex:cpf "777.888.999-00" ;
+    ex:friends ex:Person15, ex:Person18 ;
+    ex:mbox "quincy@example.com", "quincy.work@example.com" .
+
+ex:Person18 a ex:Person ;
+    ex:name "Rita   " ;
+    ex:age 34 ;
+    ex:cpf "888.999.000-11" ;
+    ex:friends ex:Person17 ;
+    ex:mbox "rita@example.com", "rita.work@example.com" .
+
+ex:Person19 a ex:Person ;
+    ex:name "Steve  " ;
+    ex:age 28 ;
+    ex:cpf "999.000.111-22" ;
+    ex:friends ex:Person20 ;
+    ex:mbox "steve@example.com", "steve.work@example.com" .
+
+ex:Person20 a ex:Person ;
+    ex:name "Trudy  " ;
+    ex:age 37 ;
+    ex:cpf "000.111.222-33" ;
+    ex:friends ex:Person19 ;
+    ex:mbox "trudy@example.com", "trudy.work@example.com" .
+
+ex:au a ex:Person ;
+    ex:name "Alice  " ;
+    ex:age 30 ;
+    ex:cpf "123.456.789-01" ;
+    ex:friends ex:Person2, ex:Person3, ex:Person4 ;
+    ex:mbox "alice@example.com", "alice.work@example.com" .
+
+ex:ay a ex:Person ;
+    ex:name "Bob    " ;
+    ex:age 25 ;
+    ex:cpf "234.567.890-12" ;
+    ex:friends ex:Person1, ex:Person3 ;
+    ex:mbox "bob@example.com", "bob.work@example.com" .
+
+ex:at a ex:Person ;
+    ex:name "Charlie" ;
+    ex:age 28 ;
+    ex:cpf "345.678.901-23" ;
+    ex:friends ex:Person1, ex:Person2, ex:Person5 ;
+    ex:mbox "charlie@example.com", "charlie.work@example.com" .
+
+ex:ar a ex:Person ;
+    ex:name "Diana  " ;
+    ex:age 22 ;
+    ex:cpf "456.789.012-34" ;
+    ex:friends ex:Person1 ;
+    ex:mbox "diana@example.com", "diana.work@example.com" .
+
+ex:af a ex:Person ;
+    ex:name "Eve    " ;
+    ex:age 35 ;
+    ex:cpf "567.890.123-45" ;
+    ex:friends ex:Person3 ;
+    ex:mbox "eve@example.com", "eve.work@example.com" .
+
+ex:ac a ex:Person ;
+    ex:name "Frank  " ;
+    ex:age 40 ;
+    ex:cpf "678.901.234-56" ;
+    ex:friends ex:Person7, ex:Person8, ex:Person9 ;
+    ex:mbox "frank@example.com", "frank.work@example.com" .
+
+ex:ax a ex:Person ;
+    ex:name "Grace  " ;
+    ex:age 29 ;
+    ex:cpf "789.012.345-67" ;
+    ex:friends ex:Person6, ex:Person8 ;
+    ex:mbox "grace@example.com", "grace.work@example.com" .
+
+ex:az a ex:Person ;
+    ex:name "Heidi  " ;
+    ex:age 33 ;
+    ex:cpf "890.123.456-78" ;
+    ex:friends ex:Person6, ex:Person7, ex:Person10 ;
+    ex:mbox "heidi@example.com", "heidi.work@example.com" .
+
+ex:aw a ex:Person ;
+    ex:name "Ivan   " ;
+    ex:age 31 ;
+    ex:cpf "901.234.567-89" ;
+    ex:friends ex:Person6 ;
+    ex:mbox "ivan@example.com", "ivan.work@example.com" .
+
+ex:ad a ex:Person ;
+    ex:name "Judy   " ;
+    ex:age 27 ;
+    ex:cpf "012.345.678-90" ;
+    ex:friends ex:Person8 ;
+    ex:mbox "judy@example.com", "judy.work@example.com" .
+
+ex:aq a ex:Person ;
+    ex:name "Karl   " ;
+    ex:age 45 ;
+    ex:cpf "111.222.333-44" ;
+    ex:friends ex:Person12, ex:Person13 ;
+    ex:mbox "karl@example.com", "karl.work@example.com" .
+
+ex:as a ex:Person ;
+    ex:name "Laura  " ;
+    ex:age 38 ;
+    ex:cpf "222.333.444-55" ;
+    ex:friends ex:Person11 ;
+    ex:mbox "laura@example.com", "laura.work@example.com" .
+
+ex:qn a ex:Person ;
+    ex:name "Mike   " ;
+    ex:age 42 ;
+    ex:cpf "333.444.555-66" ;
+    ex:friends ex:Person11, ex:Person14 ;
+    ex:mbox "mike@example.com", "mike123@example.com" .
+
+ex:qb a ex:Person ;
+    ex:name "Nina   " ;
+    ex:age 26 ;
+    ex:cpf "444.555.666-77" ;
+    ex:friends ex:Person13 ;
+    ex:mbox "nina@example.com", "nina.work@example.com" .
+
+ex:qv a ex:Person ;
+    ex:name "Oscar  " ;
+    ex:age 36 ;
+    ex:cpf "555.666.777-88" ;
+    ex:friends ex:Person16, ex:Person17 ;
+    ex:mbox "oscar@example.com", "oscar.work@example.com" .
+
+ex:qc a ex:Person ;
+    ex:name "Paul   " ;
+    ex:age 32 ;
+    ex:cpf "666.777.888-99" ;
+    ex:friends ex:Person15 ;
+    ex:mbox "paul@example.com", "paul.work@example.com" .
+
+ex:qx a ex:Person ;
+    ex:name "Quincy " ;
+    ex:age 29 ;
+    ex:cpf "777.888.999-00" ;
+    ex:friends ex:Person15, ex:Person18 ;
+    ex:mbox "quincy@example.com", "quincy.work@example.com" .
+
+ex:qz a ex:Person ;
+    ex:name "Rita   " ;
+    ex:age 34 ;
+    ex:cpf "888.999.000-11" ;
+    ex:friends ex:Person17 ;
+    ex:mbox "rita@example.com", "rita.work@example.com" .
+
+ex:qh a ex:Person ;
+    ex:name "Steve  " ;
+    ex:age 28 ;
+    ex:cpf "999.000.111-22" ;
+    ex:friends ex:Person20 ;
+    ex:mbox "steve@example.com", "steve.work@example.com" .
+
+ex:qg a ex:Person ;
+    ex:name "Trudy  " ;
+    ex:age 37 ;
+    ex:cpf "000.111.222-33" ;
+    ex:friends ex:Person19 ;
+    ex:mbox "trudy@example.com", "trudy.work@example.com" .
+
+ex:qf a ex:Person ;
+    ex:name "Alice  " ;
+    ex:age 30 ;
+    ex:cpf "123.456.789-01" ;
+    ex:friends ex:Person2, ex:Person3, ex:Person4 ;
+    ex:mbox "alice@example.com", "alice.work@example.com" .
+
+ex:qd a ex:Person ;
+    ex:name "Bob    " ;
+    ex:age 25 ;
+    ex:cpf "234.567.890-12" ;
+    ex:friends ex:Person1, ex:Person3 ;
+    ex:mbox "bob@example.com", "bob.work@example.com" .
+
+ex:qs a ex:Person ;
+    ex:name "Charlie" ;
+    ex:age 28 ;
+    ex:cpf "345.678.901-23" ;
+    ex:friends ex:Person1, ex:Person2, ex:Person5 ;
+    ex:mbox "charlie@example.com", "charlie.work@example.com" .
+
+ex:qa a ex:Person ;
+    ex:name "Diana  " ;
+    ex:age 22 ;
+    ex:cpf "456.789.012-34" ;
+    ex:friends ex:Person1 ;
+    ex:mbox "diana@example.com", "diana.work@example.com" .
+
+ex:qt a ex:Person ;
+    ex:name "Eve    " ;
+    ex:age 35 ;
+    ex:cpf "567.890.123-45" ;
+    ex:friends ex:Person3 ;
+    ex:mbox "eve@example.com", "eve.work@example.com" .
+
+ex:qr a ex:Person ;
+    ex:name "Frank  " ;
+    ex:age 40 ;
+    ex:cpf "678.901.234-56" ;
+    ex:friends ex:Person7, ex:Person8, ex:Person9 ;
+    ex:mbox "frank@example.com", "frank.work@example.com" .
+
+ex:qe a ex:Person ;
+    ex:name "Grace  " ;
+    ex:age 29 ;
+    ex:cpf "789.012.345-67" ;
+    ex:friends ex:Person6, ex:Person8 ;
+    ex:mbox "grace@example.com", "grace.work@example.com" .
+
+ex:qw a ex:Person ;
+    ex:name "Heidi  " ;
+    ex:age 33 ;
+    ex:cpf "890.123.456-78" ;
+    ex:friends ex:Person6, ex:Person7, ex:Person10 ;
+    ex:mbox "heidi@example.com", "heidi.work@example.com" .
+
+ex:m a ex:Person ;
+    ex:name "Ivan   " ;
+    ex:age 31 ;
+    ex:cpf "901.234.567-89" ;
+    ex:friends ex:Person6 ;
+    ex:mbox "ivan@example.com", "ivan.work@example.com" .
+
+ex:n a ex:Person ;
+    ex:name "Judy   " ;
+    ex:age 27 ;
+    ex:cpf "012.345.678-90" ;
+    ex:friends ex:Person8 ;
+    ex:mbox "judy@example.com", "judy.work@example.com" .
+
+ex:nn a ex:Person ;
+    ex:name "Karl   " ;
+    ex:age 45 ;
+    ex:cpf "111.222.333-44" ;
+    ex:friends ex:Person12, ex:Person13 ;
+    ex:mbox "karl@example.com", "karl.work@example.com" .
+
+ex:bb a ex:Person ;
+    ex:name "Laura  " ;
+    ex:age 38 ;
+    ex:cpf "222.333.444-55" ;
+    ex:friends ex:Person11 ;
+    ex:mbox "laura@example.com", "laura.work@example.com" .
+
+ex:b a ex:Person ;
+    ex:name "Mike   " ;
+    ex:age 42 ;
+    ex:cpf "333.444.555-66" ;
+    ex:friends ex:Person11, ex:Person14 ;
+    ex:mbox "mike@example.com", "mike123@example.com" .
+
+ex:v a ex:Person ;
+    ex:name "Nina   " ;
+    ex:age 26 ;
+    ex:cpf "444.555.666-77" ;
+    ex:friends ex:Person13 ;
+    ex:mbox "nina@example.com", "nina.work@example.com" .
+
+ex:c a ex:Person ;
+    ex:name "Oscar  " ;
+    ex:age 36 ;
+    ex:cpf "555.666.777-88" ;
+    ex:friends ex:Person16, ex:Person17 ;
+    ex:mbox "oscar@example.com", "oscar.work@example.com" .
+
+ex:cc a ex:Person ;
+    ex:name "Paul   " ;
+    ex:age 32 ;
+    ex:cpf "666.777.888-99" ;
+    ex:friends ex:Person15 ;
+    ex:mbox "paul@example.com", "paul.work@example.com" .
+
+ex:xx a ex:Person ;
+    ex:name "Quincy " ;
+    ex:age 29 ;
+    ex:cpf "777.888.999-00" ;
+    ex:friends ex:Person15, ex:Person18 ;
+    ex:mbox "quincy@example.com", "quincy.work@example.com" .
+
+ex:x a ex:Person ;
+    ex:name "Rita   " ;
+    ex:age 34 ;
+    ex:cpf "888.999.000-11" ;
+    ex:friends ex:Person17 ;
+    ex:mbox "rita@example.com", "rita.work@example.com" .
+
+ex:zz a ex:Person ;
+    ex:name "Steve  " ;
+    ex:age 28 ;
+    ex:cpf "999.000.111-22" ;
+    ex:friends ex:Person20 ;
+    ex:mbox "steve@example.com", "steve.work@example.com" .
+
+ex:z a ex:Person ;
+    ex:name "Trudy  " ;
+    ex:age 37 ;
+    ex:cpf "000.111.222-33" ;
+    ex:friends ex:Person19 ;
+    ex:mbox "trudy@example.com", "trudy.work@example.com" .
+
+ex:pp a ex:Person ;
+    ex:name "Alice  " ;
+    ex:age 30 ;
+    ex:cpf "123.456.789-01" ;
+    ex:friends ex:Person2, ex:Person3, ex:Person4 ;
+    ex:mbox "alice@example.com", "alice.work@example.com" .
+
+ex:p a ex:Person ;
+    ex:name "Bob    " ;
+    ex:age 25 ;
+    ex:cpf "234.567.890-12" ;
+    ex:friends ex:Person1, ex:Person3 ;
+    ex:mbox "bob@example.com", "bob.work@example.com" .
+
+ex:oo a ex:Person ;
+    ex:name "Charlie" ;
+    ex:age 28 ;
+    ex:cpf "345.678.901-23" ;
+    ex:friends ex:Person1, ex:Person2, ex:Person5 ;
+    ex:mbox "charlie@example.com", "charlie.work@example.com" .
+
+ex:o a ex:Person ;
+    ex:name "Diana  " ;
+    ex:age 22 ;
+    ex:cpf "456.789.012-34" ;
+    ex:friends ex:Person1 ;
+    ex:mbox "diana@example.com", "diana.work@example.com" .
+
+ex:ii a ex:Person ;
+    ex:name "Eve    " ;
+    ex:age 35 ;
+    ex:cpf "567.890.123-45" ;
+    ex:friends ex:Person3 ;
+    ex:mbox "eve@example.com", "eve.work@example.com" .
+
+ex:i a ex:Person ;
+    ex:name "Frank  " ;
+    ex:age 40 ;
+    ex:cpf "678.901.234-56" ;
+    ex:friends ex:Person7, ex:Person8, ex:Person9 ;
+    ex:mbox "frank@example.com", "frank.work@example.com" .
+
+ex:uu a ex:Person ;
+    ex:name "Grace  " ;
+    ex:age 29 ;
+    ex:cpf "789.012.345-67" ;
+    ex:friends ex:Person6, ex:Person8 ;
+    ex:mbox "grace@example.com", "grace.work@example.com" .
+
+ex:u a ex:Person ;
+    ex:name "Heidi  " ;
+    ex:age 33 ;
+    ex:cpf "890.123.456-78" ;
+    ex:friends ex:Person6, ex:Person7, ex:Person10 ;
+    ex:mbox "heidi@example.com", "heidi.work@example.com" .
+
+ex:yy a ex:Person ;
+    ex:name "Ivan   " ;
+    ex:age 31 ;
+    ex:cpf "901.234.567-89" ;
+    ex:friends ex:Person6 ;
+    ex:mbox "ivan@example.com", "ivan.work@example.com" .
+
+ex:y a ex:Person ;
+    ex:name "Judy   " ;
+    ex:age 27 ;
+    ex:cpf "012.345.678-90" ;
+    ex:friends ex:Person8 ;
+    ex:mbox "judy@example.com", "judy.work@example.com" .
+
+ex:tt a ex:Person ;
+    ex:name "Karl   " ;
+    ex:age 45 ;
+    ex:cpf "111.222.333-44" ;
+    ex:friends ex:Person12, ex:Person13 ;
+    ex:mbox "karl@example.com", "karl.work@example.com" .
+
+ex:t a ex:Person ;
+    ex:name "Laura  " ;
+    ex:age 38 ;
+    ex:cpf "222.333.444-55" ;
+    ex:friends ex:Person11 ;
+    ex:mbox "laura@example.com", "laura.work@example.com" .
+
+ex:e a ex:Person ;
+    ex:name "Mike   " ;
+    ex:age 42 ;
+    ex:cpf "333.444.555-66" ;
+    ex:friends ex:Person11, ex:Person14 ;
+    ex:mbox "mike@example.com", "mike123@example.com" .
+
+ex:r a ex:Person ;
+    ex:name "Nina   " ;
+    ex:age 26 ;
+    ex:cpf "444.555.666-77" ;
+    ex:friends ex:Person13 ;
+    ex:mbox "nina@example.com", "nina.work@example.com" .
+
+ex:rr a ex:Person ;
+    ex:name "Oscar  " ;
+    ex:age 36 ;
+    ex:cpf "555.666.777-88" ;
+    ex:friends ex:Person16, ex:Person17 ;
+    ex:mbox "oscar@example.com", "oscar.work@example.com" .
+
+ex:ee a ex:Person ;
+    ex:name "Paul   " ;
+    ex:age 32 ;
+    ex:cpf "666.777.888-99" ;
+    ex:friends ex:Person15 ;
+    ex:mbox "paul@example.com", "paul.work@example.com" .
+
+ex:e a ex:Person ;
+    ex:name "Quincy " ;
+    ex:age 29 ;
+    ex:cpf "777.888.999-00" ;
+    ex:friends ex:Person15, ex:Person18 ;
+    ex:mbox "quincy@example.com", "quincy.work@example.com" .
+
+ex:ww a ex:Person ;
+    ex:name "Rita   " ;
+    ex:age 34 ;
+    ex:cpf "888.999.000-11" ;
+    ex:friends ex:Person17 ;
+    ex:mbox "rita@example.com", "rita.work@example.com" .
+
+ex:w a ex:Person ;
+    ex:name "Steve  " ;
+    ex:age 28 ;
+    ex:cpf "999.000.111-22" ;
+    ex:friends ex:Person20 ;
+    ex:mbox "steve@example.com", "steve.work@example.com" .
+
+ex:qq a ex:Person ;
+    ex:name "Trudy  " ;
+    ex:age 37 ;
+    ex:cpf "000.111.222-33" ;
+    ex:friends ex:Person19 ;
+    ex:mbox "trudy@example.com", "trudy.work@example.com" .
+
+ex:q a ex:Person ;
+    ex:name "Alice  " ;
+    ex:age 30 ;
+    ex:cpf "123.456.789-01" ;
+    ex:friends ex:Person2, ex:Person3, ex:Person4 ;
+    ex:mbox "alice@example.com", "alice.work@example.com" .
+
+ex:çç a ex:Person ;
+    ex:name "Bob    " ;
+    ex:age 25 ;
+    ex:cpf "234.567.890-12" ;
+    ex:friends ex:Person1, ex:Person3 ;
+    ex:mbox "bob@example.com", "bob.work@example.com" .
+
+ex:ç a ex:Person ;
+    ex:name "Charlie" ;
+    ex:age 28 ;
+    ex:cpf "345.678.901-23" ;
+    ex:friends ex:Person1, ex:Person2, ex:Person5 ;
+    ex:mbox "charlie@example.com", "charlie.work@example.com" .
+
+ex:l a ex:Person ;
+    ex:name "Diana  " ;
+    ex:age 22 ;
+    ex:cpf "456.789.012-34" ;
+    ex:friends ex:Person1 ;
+    ex:mbox "diana@example.com", "diana.work@example.com" .
+
+ex:ll a ex:Person ;
+    ex:name "Eve    " ;
+    ex:age 35 ;
+    ex:cpf "567.890.123-45" ;
+    ex:friends ex:Person3 ;
+    ex:mbox "eve@example.com", "eve.work@example.com" .
+
+ex:k a ex:Person ;
+    ex:name "Frank  " ;
+    ex:age 40 ;
+    ex:cpf "678.901.234-56" ;
+    ex:friends ex:Person7, ex:Person8, ex:Person9 ;
+    ex:mbox "frank@example.com", "frank.work@example.com" .
+
+ex:kk a ex:Person ;
+    ex:name "Grace  " ;
+    ex:age 29 ;
+    ex:cpf "789.012.345-67" ;
+    ex:friends ex:Person6, ex:Person8 ;
+    ex:mbox "grace@example.com", "grace.work@example.com" .
+
+ex:jj a ex:Person ;
+    ex:name "Heidi  " ;
+    ex:age 33 ;
+    ex:cpf "890.123.456-78" ;
+    ex:friends ex:Person6, ex:Person7, ex:Person10 ;
+    ex:mbox "heidi@example.com", "heidi.work@example.com" .
+
+ex:j a ex:Person ;
+    ex:name "Ivan   " ;
+    ex:age 31 ;
+    ex:cpf "901.234.567-89" ;
+    ex:friends ex:Person6 ;
+    ex:mbox "ivan@example.com", "ivan.work@example.com" .
+
+ex:h a ex:Person ;
+    ex:name "Judy   " ;
+    ex:age 27 ;
+    ex:cpf "012.345.678-90" ;
+    ex:friends ex:Person8 ;
+    ex:mbox "judy@example.com", "judy.work@example.com" .
+
+ex:hh a ex:Person ;
+    ex:name "Karl   " ;
+    ex:age 45 ;
+    ex:cpf "111.222.333-44" ;
+    ex:friends ex:Person12, ex:Person13 ;
+    ex:mbox "karl@example.com", "karl.work@example.com" .
+
+ex:f a ex:Person ;
+    ex:name "Laura  " ;
+    ex:age 38 ;
+    ex:cpf "222.333.444-55" ;
+    ex:friends ex:Person11 ;
+    ex:mbox "laura@example.com", "laura.work@example.com" .
+
+ex:g a ex:Person ;
+    ex:name "Mike   " ;
+    ex:age 42 ;
+    ex:cpf "333.444.555-66" ;
+    ex:friends ex:Person11, ex:Person14 ;
+    ex:mbox "mike@example.com", "mike123@example.com" .
+
+ex:gg a ex:Person ;
+    ex:name "Nina   " ;
+    ex:age 26 ;
+    ex:cpf "444.555.666-77" ;
+    ex:friends ex:Person13 ;
+    ex:mbox "nina@example.com", "nina.work@example.com" .
+
+ex:ff a ex:Person ;
+    ex:name "Oscar  " ;
+    ex:age 36 ;
+    ex:cpf "555.666.777-88" ;
+    ex:friends ex:Person16, ex:Person17 ;
+    ex:mbox "oscar@example.com", "oscar.work@example.com" .
+
+ex:dd a ex:Person ;
+    ex:name "Paul   " ;
+    ex:age 32 ;
+    ex:cpf "666.777.888-99" ;
+    ex:friends ex:Person15 ;
+    ex:mbox "paul@example.com", "paul.work@example.com" .
+
+ex:ss a ex:Person ;
+    ex:name "Quincy " ;
+    ex:age 29 ;
+    ex:cpf "777.888.999-00" ;
+    ex:friends ex:Person15, ex:Person18 ;
+    ex:mbox "quincy@example.com", "quincy.work@example.com" .
+
+ex:aa a ex:Person ;
+    ex:name "Rita   " ;
+    ex:age 34 ;
+    ex:cpf "888.999.000-11" ;
+    ex:friends ex:Person17 ;
+    ex:mbox "rita@example.com", "rita.work@example.com" .
+
+ex:s a ex:Person ;
+    ex:name "Steve  " ;
+    ex:age 28 ;
+    ex:cpf "999.000.111-22" ;
+    ex:friends ex:Person20 ;
+    ex:mbox "steve@example.com", "steve.work@example.com" .
+
+ex:a a ex:Person ;
+    ex:name "Trudy  " ;
+    ex:age 37 ;
+    ex:cpf "000.111.222-33" ;
+    ex:friends ex:Person19 ;
+    ex:mbox "trudy@example.com", "trudy.work@example.com" .
